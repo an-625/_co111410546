@@ -28,10 +28,7 @@ CHIP Memory {
 
     PARTS:
     // Put your code here:
-    IN in[16], load, address[15];
-    OUT out[16];
 
-    PARTS:
 		Not(in=address[14], out=N14);
 		And(a=N14, b=load, out=Mload);
 		And(a=address[14], b=load, out=Sload);
